@@ -9,7 +9,7 @@
         class="add-product-btn"
     ></button>
 
-    <div class="row wrap gap-1 space-between">
+    <div class="row wrap gap-2 space-between">
         <app-product 
             *ngFor="let product of products" 
             [product]="product"
@@ -24,6 +24,7 @@
         [totalRecords]="totalRecords"
         [rowsPerPageOptions]="[5, 10, 20]"
         (onPageChange)="onPageChange($event)"
+        #paginator
     ></p-paginator>
 
     <app-edit-popup
