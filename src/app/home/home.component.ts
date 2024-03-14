@@ -34,7 +34,7 @@ export class HomeComponent {
     }
 
     toggleAddPopup(){
-        this.displayEditPopup = true;
+        this.displayAddPopup = true;
     }
 
     selectedProduct: Product = {
